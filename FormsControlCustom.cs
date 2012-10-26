@@ -52,7 +52,7 @@ namespace EventsRegistration
 
         private const string clientEmailSubject = "Event registration";
 
-        private const string limitReachedMsg = "REGISTRATION FOR THIS EVENT HAS BEEN CLOSED. The capacity for this event has been reached. No further registrants will be accepted.";
+        private const string limitReachedMsg = "Online registration for this event is not available";
 
         private const string errorMsg = "Oops! There is a problem with this event registration.";        
 
@@ -644,6 +644,7 @@ namespace EventsRegistration
                 objPanelText.Text = limitReachedMsg;
                 this.ErrorsPanel.Controls.Add(objPanelText);
                 this.ErrorsPanel.Visible = true;
+                this.FormControls.Visible = false;
                 SubmitButton.Enabled = false;
             }
 
