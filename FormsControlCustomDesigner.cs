@@ -30,6 +30,10 @@ namespace EventsRegistration
             }
         }
 
+
+
+
+
         /// <summary>
         /// Gets a type from the resource assembly.
         /// Resource assembly is an assembly that contains embedded resources such as templates, images, CSS files and etc.
@@ -43,6 +47,10 @@ namespace EventsRegistration
                 return this.GetType();
             }
         }
+
+
+
+
 
         protected override void InitializeControls(Telerik.Sitefinity.Web.UI.GenericContainer container)
         {
